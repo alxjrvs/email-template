@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Lightweight Email Templater</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha256-7VVaJ5GDwFQiLIc+eNksQLUSSY5JNZtqv9o2BI8UGYg=" crossorigin="anonymous" />
+
+  <style>
+  html, body {
+    margin:0;
+    padding:0;
+    background-color: grey;
+  }
+
+  html, body, div[data-reactroot], .fullheight {
+    height: 100%;
+  }
+
+  .draggable-block-spawner {
+    height: 100px;
+    min-width: 100px;
+    margin-top: 5px;
+    margin-left: 1% !important;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+  }
+
+  .main-pane {
+    background-color: inherit;
+    display: inline-table;
+    height: 100%;
+    margin-left: 35%;
+  }
+
+  .left-pane {
+    position: fixed;
+    background-color: white;
+    height: 100%;
+  }
+
+  .template-workspace {
+    background-color: white;
+    min-height: 80%;
+    margin-right: 6.5%;
+    margin-top: 20px;
+    position: relative;
+    padding: 15px 5px;
+  }
+
+  .template-block{
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+    border: 1px dashed gray;
+    position: relative;
+    margin-top: 5px;
+    max-width: 100%
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .true-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .template-block-container {
+    position: relative;
+
+  }
+
+  .editing-layer {
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="fullheight" id="appAnchor" />
+
+  <script src="bundle.js"></script>
+</body>
+</html>
